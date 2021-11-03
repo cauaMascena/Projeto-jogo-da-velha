@@ -1,112 +1,90 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    user-select: none;
+    margin: 0;
 }
 body {
     width: 100vw;
     height: 100vh;
     font-family: 'Monoton';
-    color: white;
     background: linear-gradient(180deg, rgb(15, 10, 10) 10%, rgb(53, 50, 50) 53%, rgba(15, 10, 10) 100%);
-    display: flex;
-    flex-direction: row;
-}
-header {
-    width: 100%;
-    height: 20%;
-}
-
-input {
-    background-color: transparent;
-    font-size: 6vw;
-    width: 10vw;
-    height: 10vw;
-    margin: 0;
-    color: transparent;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000;
-    border: solid 3px;
-}
-
-.plano1 {
-    margin: 180px 550px;
-}
-
-.plano2 {
-    height: 199px;
-    border-bottom: solid 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.bloco {
-    width: 200px;
-    height: 100%;
-    border-right: solid 3px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000;
-}
-
-.bloco:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000;
-}
-
-.player1 {
-    font-size: 1.5rem;
-    list-style-type: none;
-    text-shadow: 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000;
-    margin-left: 875px;
-    margin-top: 80px;
-    /* height: 100px; */
-    position: fixed;
-    font-family: 'Sansita One';
-}
-
-.player2 {
-    font-size: 1.5rem;
-    list-style-type: none;
-    text-shadow: 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000;
-    margin-left: 875px;
-    margin-top: 810px;
-    /* height: 100px; */
-    position: fixed;
-    font-family: 'Sansita One';
-}
-
-main {
-    max-width: 100%;
-    max-height: 80%;
-    /* margin-bottom: 10%; */
-    /* justify-content: center; */
-    /* text-align: center; */
-    position: fixed;
-    /* display: flex; */
-    /* font-size: 2.5rem; */
-    margin-left: 120px;
-}
-#jogador {
-    display: inline;
-}
-
-#reiniciar {
-    position: absolute;
-    margin-top: 22%;
-    margin-left: 1000px;
-    width: 12vw;
-    height: 6vw;
-    font-size: 1em;
     color: white;
-    border-radius: 25px;
-    font-family: Comic Sans;
-    font-style: italic;
-    left: 490px;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+}
+.menu {
+    margin: 10px;
+    display: flex;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.menu li:hover > .submenu {
+    display: block;
+}
+
+.submenu {
+    /* margin-top: 9px;   */
+    font-size: 18px;
+    position: absolute;
+    display: none;
+}
+li {
+    list-style: none;
+}
+.menu-a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000;
+}
+
+.submenu a {
+    width: 180px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 5px;
+    background-color: transparent;
+}
+
+.submenu a:hover {
+    border-left: 5px solid red;
+}
+img {
+    height: 110px;
+}
+#mostrador {
+    margin: auto;
+}
+.espaco {
+    width: 130px;
+    height: 130px;
+    border: 2px solid black;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+.tabuleiro {
+    width: 528px;
+    height: 528px;
+    margin: auto;
+}
+button {
+    width: 150px;
+    height: 5%;
+    border-radius: 8px;
+    border: 0;
+    font-family: 'Mali', cursive;
+    font-weight: 80;
+    /* font-size: clamp(0.1em, 1em + 1vw, 2em); */
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 100px;
+    margin-top: 200px;
+    color: rgb(14, 4, 49);
+    background-color: blue;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
 }

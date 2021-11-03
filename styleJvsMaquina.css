@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(180deg, rgb(15, 10, 10) 10%, rgb(53, 50, 50) 53%, rgba(15, 10, 10) 100%);
+
+}
+
+#jogo{
+    width:603px;
+    height:600px;
+    border:solid 3px
+}
+ 
+.linha{
+    height:200px;
+    border-bottom:solid 1px;
+}
+ 
+.casa{
+    width:200px;
+    height:100%;
+    border-right:solid 1px;
+    float:left;
+}
