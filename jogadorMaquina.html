@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Zen+Dots&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="styleJvsMaquina.css" />
+        <link rel="stylesheet" href="stylePlay.css" />
         <!-- <link rel="stylesheet" href="styleOpcao.css" /> -->
 
         <title>Jogo da velha</title>
@@ -21,26 +21,24 @@
                 </ul>
             </li>
         </header>
-        <div id="jogo">
-            <div class="linha">
-                <div class="casa" id="casa1"></div>
-                <div class="casa" id="casa2"></div>
-                <div class="casa" id="casa3"></div>
-            </div>
-            <div class="linha">
-                <div class="casa" id="casa4"></div>
-                <div class="casa" id="casa5"></div>
-                <div class="casa" id="casa6"></div>
-            </div>
-            <div class="linha">
-                <div class="casa" id="casa7"></div>
-                <div class="casa" id="casa8"></div>
-                <div class="casa" id="casa9"></div>
-            </div>
+        <div id="mostrador">
+            <p>Vez do Jogador:</p>
+            <img src="" height="50px" alt="" />
         </div>
-        <div id="resultado"></div>
+        <div class="tabuleiro">
+            <div id="a1" class="espaco" jogada=""></div>
+            <div id="a2" class="espaco" jogada=""></div>
+            <div id="a3" class="espaco" jogada=""></div>
+
+            <div id="b1" class="espaco" jogada=""></div>
+            <div id="b2" class="espaco" jogada=""></div>
+            <div id="b3" class="espaco" jogada=""></div>
+
+            <div id="c1" class="espaco" jogada=""></div>
+            <div id="c2" class="espaco" jogada=""></div>
+            <div id="c3" class="espaco" jogada=""></div>
+        </div>
 
         <script type="text/javascript" src="scriptMaquinaJogador.js"></script>
-
     </body>
 </html>
